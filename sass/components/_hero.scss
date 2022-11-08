@@ -44,9 +44,10 @@
     border: 1px solid var(--button);
     cursor: pointer;
   
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: var(--cubic);
+    // transition-property: background-color;
+    // transition-duration: 250ms;
+    // transition-timing-function: var(--cubic);
+    @include transit(background-color);
   }
   
 

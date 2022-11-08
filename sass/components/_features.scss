@@ -13,11 +13,10 @@
   }
   
   .feature-content {
+    @include flexible;
     width: 270px;
     height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
     background: var(--team);
     border-radius: 4px;
   }

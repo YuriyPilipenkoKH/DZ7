@@ -1,7 +1,7 @@
-@mixin flexible {
+@mixin flexible($value: center) {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: $value;
 }
 @mixin transit($value) {
     transition-property: $value;

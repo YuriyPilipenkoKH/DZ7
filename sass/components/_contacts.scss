@@ -1,9 +1,9 @@
 
 .contacts {
     
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    // display: flex;
+    // justify-content: flex-start;
+    // align-items: center;
     margin-left: auto;
   }
   
@@ -40,11 +40,8 @@
   }
   
   .contacts__link {
-
-    display: flex;
+    @include flexible(space-between);
     min-width: 140px;
-    justify-content: space-between;
-    align-items: center;
   }
   
   .contacts__link--wide {
