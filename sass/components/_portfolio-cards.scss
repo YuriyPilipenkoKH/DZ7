@@ -14,9 +14,10 @@
     position: relative;
     text-decoration: none;
 
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: $cubic;
+    // transition-property: box-shadow;
+    // transition-duration: 250ms;
+    // transition-timing-function: $cubic;
+    @include transit(box-shadow);
   }
   
   /* cue */
