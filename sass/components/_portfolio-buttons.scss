@@ -4,9 +4,7 @@
   }
   
   .button-list {
-
-    display: flex;
-    justify-content: center;
+    @include flexible;
     gap: 8px;
     margin-bottom: 50px;
     list-style-type: none;
@@ -28,6 +26,8 @@
     border-radius: 4px;
     border-color: transparent;
     cursor: pointer;
+
+    // @include transit(background-color,color,box-shadow); 
 
     transition-property: background-color, color, box-shadow;
      transition-duration: 250ms;

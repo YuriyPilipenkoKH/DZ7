@@ -5,15 +5,13 @@
   }
   
   .menu__list, .contacts {
-    display: flex;
-    list-style-type: none;
-    align-items: center;
+    @include flexible;
     gap: 50px;
   }
   
   .header-nav {
-    display: flex;
-    align-items: center;
+    @include flexible;
+
   }
   
   .current {
@@ -48,9 +46,10 @@
     }
     color: var(--main-color);
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: var(--cubic);
+    // transition-property: color;
+    // transition-duration: 250ms;
+    // transition-timing-function: var(--cubic);
+    @include transit(color)
 
   }
 

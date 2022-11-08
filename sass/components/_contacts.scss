@@ -10,7 +10,7 @@
   .menu__link,
   .contacts__link {
     
-    display: flex;
+    // display: flex;
     padding: 32px 0;
     font-weight: 500;
     font-size: 14px;
@@ -24,10 +24,10 @@
   .contacts__link,
   .contacts__icon {
     color: var(--contact);
- 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: var(--cubic);
+    @include transit(color);
+    // transition-property: color;
+    // transition-duration: 250ms;
+    // transition-timing-function: var(--cubic);
   }
   
 
@@ -55,9 +55,10 @@
     display: block;
     height: auto;
     fill: var(--contact);
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: var(--cubic);
+    @include transit(fill)
+    // transition-property: fill;
+    // transition-duration: 250ms;
+    // transition-timing-function: var(--cubic);
   }
   
 
