@@ -116,6 +116,61 @@ img {
   color: var(--black);
 }
 
+/*work*/
+.works {
+  padding-bottom: 94px;
+}
+@media screen and (max-width: 1199px) {
+  .works {
+    display: none;
+  }
+}
+
+.work__title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  text-align: center;
+}
+
+.work__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.work__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.work__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 24%;
+  background-color: var(--design);
+}
+
+.work__description {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-background);
+  padding-top: 27px;
+}
+
 /*modal*/
 .modal__title {
   margin: 0 auto 18px;
