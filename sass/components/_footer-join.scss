@@ -1,9 +1,14 @@
 /*footer-join*/
   
   .footer-join {
-    width: 206px;
+    // width: 206px;
+
+    @media screen and (max-width: 480px) {
+      @include flexible;
+      flex-direction: column;
   }
-  
+}
+
   .footer-join__list {
     
     display: flex;

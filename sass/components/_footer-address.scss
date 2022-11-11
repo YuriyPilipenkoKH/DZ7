@@ -2,12 +2,26 @@
 .footer {
     background: var(--footer);
     padding: 60px 0 60px 0;
+    
   }
-  
+  .footer__requisites {
+    
+    @media screen and (max-width: 480px) {
+      @include flexible;
+      flex-direction: column;
+
+    }
+  }
   .footer-address {
     margin-top: 20px;
   }
-  
+  .footer-address__list {
+    @media screen and (max-width: 480px) {
+      @include flexible;
+      flex-direction: column;
+      
+  }
+}
   
   .footer-address__map {
     font-style: normal;
@@ -46,10 +60,8 @@
       color: var(--button);
     }
   }
+  
 
   .footer__content {
-
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+ 
   }
