@@ -291,12 +291,23 @@ img {
 }
 
 .clients__title {
-  margin-bottom: 50px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
+}
+@media screen and (max-width: 1199px) {
+  .clients__title {
+    font-size: 28px;
+    line-height: 1.1785714286;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+    line-height: 1.1666666667;
+    margin-bottom: 50px;
+  }
 }
 
 .clients__link {
