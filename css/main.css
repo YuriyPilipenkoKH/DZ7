@@ -782,6 +782,11 @@ img {
   text-transform: uppercase;
   color: var(--main-background);
 }
+@media screen and (max-width: 1199px) {
+  .footer-join__appeal {
+    text-align: center;
+  }
+}
 
 /*footer-form*/
 @media screen and (max-width: 1199px) {

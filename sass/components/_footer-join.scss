@@ -53,4 +53,10 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-background);
+
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+  }
+
+
   }
