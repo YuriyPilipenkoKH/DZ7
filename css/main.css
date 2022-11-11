@@ -366,12 +366,25 @@ img {
   }
 }
 
-.team-card {
-  padding: 30px 0;
+.team__list-image {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 1199px) {
+  .team-card {
+    padding: 30px 0 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-card {
+    padding: 30px 0;
+  }
 }
 
 .team-card__name {
   margin-bottom: 10px;
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -381,6 +394,7 @@ img {
 
 .team-card__position {
   margin-bottom: 16px;
+  text-align: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
