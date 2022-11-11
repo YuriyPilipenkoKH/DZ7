@@ -1,13 +1,22 @@
 /*footer-form*/
 .footer-subscribe {
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 1199px) {
     @include flexible;
     flex-direction: column;
 }
+
 }
+.footer-form {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+
+  width: 100%;
+ }
 .footer-form__input {
+ 
+  
     padding: 15px 0 15px 15px;
-    width: 358px;
     font-size: 16px;
     line-height: calc(20 / 16);
     letter-spacing: 0.03em;
@@ -16,11 +25,13 @@
     border: 1px solid var(--footer-input);
     box-shadow: var(--box-shadow-fifth);
     border-radius: 4px;
+
+    @media screen and (max-width: 1199px) {
+      width: 100%
+  }
   }
   
-  .footer-form {
-   
-  }
+  
   
   
   .footer-form input {
@@ -30,6 +41,10 @@
       letter-spacing: 0.03em;
       color: var(--main-background);
     }
+
+    @media screen and (max-width: 1199px) {
+     margin-bottom: 20px;
+  }
   }
   
   .footer-form__button {
@@ -54,7 +69,7 @@
     border: 1px solid var(--button);
     cursor: pointer;
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 1199px) {
       margin: 0 auto;
   }
 
