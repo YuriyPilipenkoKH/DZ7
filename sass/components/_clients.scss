@@ -1,7 +1,12 @@
 
 /*clients*/
 .clients {
+  @media screen and (max-width: 1199px) {
+    padding: 60px 0;
+  }
+  @media screen and (min-width: 1200px) {
     padding: 94px 0;
+  }
   }
   
   .clients__title {
@@ -14,30 +19,51 @@
   }
   
   .clients__list {
-    @include flexible;
+    display: flex;
     gap: 30px;
+    @media screen and (max-width: 767px) {
+      
+      flex-wrap: wrap;
+     
+    }
+   
+    @media screen and (min-width: 1200px) {
+      
+      
+    }
   }
+
   
   .clients__item {
-    flex-basis: calc((100% - 5 * 30px)/ 6);
+    // flex-basis: calc((100% - 5 * 30px)/ 6);
+    @media screen and (max-width: 767px) {
+     
+      flex-basis: calc((100% - 2 * 30px) / 3);
+    }
+    @media screen and (min-width: 1200px) {
+      
+      flex-basis: calc((100% - 5 * 30px) / 6);
+    }
+
   }
   
   .clients__icon {
-    min-width: 165px;
+    
     height: 80px;
     fill: var(--color-third);
     @include transit(fill);
   }
   
   .clients__link {
-    display: flex;
-    align-items: center;
-    width: 170px;
-    height: 92px;
+     display: flex;
+     align-items: center;
+    justify-content: center;
     border: 1px solid var(--color-third);
     border-radius: 4px;
     
     @include transit(border-color);
+
+    
   }
   
 
