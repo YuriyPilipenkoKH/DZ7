@@ -108,7 +108,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--button);
   text-decoration: none;
-  padding: 25px 0;
+  padding: 24px 0 25px;
 }
 @media screen and (max-width: 1199px) {
   .header-nav__logo {

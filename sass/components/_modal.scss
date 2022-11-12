@@ -32,8 +32,6 @@
   }
   
   .modal {
-    // height: 581px;
-    // width: 528px;
     background-color: var(--main-background);
     padding: 40px;
     border-radius: 4px;
@@ -52,9 +50,7 @@
       height: 581px;
       width: 528px;
     }
-
   }
-  
   .modal-shut {
 
     display: flex;
@@ -135,7 +131,6 @@
     display: inline-block;
   }
   
-
   .modal-form__input {
     &:hover ~ .modal-form__icon,
     &:focus ~ .modal-form__icon {
@@ -197,7 +192,7 @@
   
   .form-check__text {
     position: absolute;
-    // left: 22px;
+    
     width: 16px;
     height: 15px;
     border: 2px solid var(--black);
@@ -224,8 +219,6 @@
     gap: 8px;
      align-items: center;
     margin: 0 auto 30px;
-    // font-size: 14px;
-    // line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--contact);
   }
@@ -254,8 +247,6 @@
     transition-timing-function: var(--cubic);
   }
   
-
-  // }
   .modal-form__button {
     &:hover,
     &:focus {
@@ -265,13 +256,12 @@
   }
   
   .form-check__contract-terms {
-    // font-size: 14px;
-    // line-height: calc(24 / 14);
+    
     letter-spacing: 0.03em;
     text-decoration: underline;
     color: var(--button);
   }
-  
+
   @media screen and (max-width: 1199px) {
     .form-check, .form-check__contract-terms{
       font-size: 12px;
