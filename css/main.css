@@ -217,6 +217,15 @@ img {
 }
 
 .contacts__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-weight: 500;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -231,6 +240,7 @@ img {
   .contacts__link {
     font-size: 14px;
     line-height: 1.1428571429;
+    padding: 32px 0;
   }
 }
 
@@ -248,17 +258,8 @@ img {
 .contacts__link:hover, .contacts__link:focus {
   color: var(--button);
 }
-
-.contacts__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.contacts__link:hover .contacts__icon, .contacts__link:focus .contacts__icon {
+  fill: var(--button);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -304,10 +305,6 @@ img {
   .contacts__icon {
     scale: 1;
   }
-}
-
-.contacts__link:hover .contacts__icon, .contacts__link:focus .contacts__icon {
-  fill: var(--button);
 }
 
 /*hero*/
