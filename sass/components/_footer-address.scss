@@ -34,7 +34,7 @@
     margin-top: 20px;
   }
   .footer-address__list {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
       @include flexible;
       flex-direction: column;
 

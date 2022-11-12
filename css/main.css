@@ -655,7 +655,7 @@ img {
   margin-top: 20px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .footer-address__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -809,7 +809,6 @@ img {
 }
 
 .footer-form {
-  outline: 1px solid yellow;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
