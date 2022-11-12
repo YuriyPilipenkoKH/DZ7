@@ -10,20 +10,53 @@
     margin-right: auto;
     background-size: cover;
     background-color: var(--image-overlay-bgc);
-    background-image: linear-gradient(to right,
-   var(--image-overlay), var(--image-overlay)),
-      url("../../images/header-img@2x.jpg");
+  
+
+    @media screen and (max-width: 489px) {
+      background-image: linear-gradient(to right, var(--image-overlay), var(--image-overlay)),
+        url("../../images/header-img__mobile.jpg");
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+         .overlay {
+           background-image: linear-gradient(to right,  var(--image-overlay), var(--image-overlay)),
+           url("../../images/header-img__mobile@2x.jpg");
+         }
+ }
+      
+    }
+    @media screen and (min-width: 490px) and (max-width: 767px) {
+      background-image: linear-gradient(to right, var(--image-overlay), var(--image-overlay)),
+      url("../../images/header-img__tab.jpg");
+
+      @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+       .overlay {
+         background-image: linear-gradient(to right,  var(--image-overlay), var(--image-overlay)),
+         url("../../images/header-img__tab@2x.jpg");
+       }
+}
+    
+    }
+    @media screen and (min-width: 768px) {
+      background-image: linear-gradient(to right, var(--image-overlay), var(--image-overlay)),
+      url("../../images/header-img__desktop.jpg");
+
+      @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+       .overlay {
+         background-image: linear-gradient(to right,  var(--image-overlay), var(--image-overlay)),
+         url("../../images/header-img__desktop@2x.jpg");
+       }
+}
+    
+    }
+
   }
 
-  @media screen and (min-device-pixel-ratio: 2),
-         screen and (min-resolution: 192dpi),
-         screen and (min-resolution: 2dppx) {
-          .overlay {
-            background-image: linear-gradient(to right,
-            var(--image-overlay), var(--image-overlay)),
-            url("../../images/header-img@3x.jpg");
-          }
-  }
   
   .hero__title {
     display: block;
@@ -71,7 +104,6 @@
     @include transit(background-color);
   }
   
-
   .hero__button {
     &:hover,
     &:focus {
