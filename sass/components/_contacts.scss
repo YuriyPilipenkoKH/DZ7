@@ -42,7 +42,7 @@
   }
   
   .contacts__link {
-      @include flexible(space-around);
+      @include flexible(space-between);
     
   }
   
@@ -75,15 +75,12 @@
     @include transit(fill);
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-      scale: 0.8;
+      scale: 0.9;
     }
     @media screen and (min-width: 1200px) {
       scale: 1;
     }
-
-
   }
-  
 
   .contacts__link {
     &:hover .contacts__icon,
