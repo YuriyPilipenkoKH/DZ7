@@ -17,13 +17,13 @@
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      padding: 0;
+      padding: 0 15px;
      }
 
   }
   .footer__requisites {
     
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
       @include flexible;
       flex-direction: column;
       padding-bottom: 60px;

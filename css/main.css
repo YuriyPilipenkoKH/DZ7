@@ -628,11 +628,11 @@ img {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    padding: 0;
+    padding: 0 15px;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .footer__requisites {
     display: -webkit-box;
     display: -ms-flexbox;
