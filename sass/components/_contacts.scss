@@ -1,36 +1,42 @@
 
 .contacts {
     
-    // display: flex;
-    // justify-content: flex-start;
-    // align-items: center;
+    // 
+    // 
+
     margin-left: auto;
+
+    @media screen and (min-width: 1200px) {
+      @include flexible;
+      gap: 50px;
+    }
   }
-  
-  .menu__link,
+
   .contacts__link {
     
-    // display: flex;
-    padding: 32px 0;
+    // padding: 32px 0;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    
     letter-spacing: 0.02em;
     text-decoration: none;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      font-size: 12px;
+      line-height: calc(14 / 12);
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: calc(16 / 14);
+    }
     
   }
-  
 
   .contacts__link,
   .contacts__icon {
     color: var(--contact);
     @include transit(color);
-    // transition-property: color;
-    // transition-duration: 250ms;
-    // transition-timing-function: var(--cubic);
-  }
-  
 
+  }
   
   .contacts__link {
     &:hover,
@@ -40,22 +46,46 @@
   }
   
   .contacts__link {
-    @include flexible(space-between);
-    min-width: 140px;
+     @include flexible(space-between);
+    // min-width: 140px;
   }
   
   .contacts__link--wide {
-    min-width: 160px;
+    
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 10px;
+      min-width: 138px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin: 0;
+      min-width: 160px;
+
+    }
+  }
+  .contacts__link--narrow {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 123px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 140px;
+    }
+
   }
   
   .contacts__icon {
     display: block;
-    height: auto;
+    // height: auto;
     fill: var(--contact);
-    @include transit(fill)
-    // transition-property: fill;
-    // transition-duration: 250ms;
-    // transition-timing-function: var(--cubic);
+    @include transit(fill);
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      scale: 0.8;
+    }
+    @media screen and (min-width: 1200px) {
+      scale: 1;
+    }
+
+
   }
   
 
