@@ -562,6 +562,7 @@ img {
 .team__list-image {
   margin-right: auto;
   margin-left: auto;
+  max-width: 100%;
 }
 
 @media screen and (max-width: 1199px) {
