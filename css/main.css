@@ -256,15 +256,14 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts__link--wide {
     margin-bottom: 10px;
-    min-width: 138px;
+    min-width: 140px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1181,8 +1180,6 @@ img {
 }
 
 .modal {
-  height: 581px;
-  width: 528px;
   background-color: var(--main-background);
   padding: 40px;
   border-radius: 4px;
@@ -1195,6 +1192,18 @@ img {
   transition: -webkit-transform 1600ms var(--cubic);
   transition: transform 1600ms var(--cubic);
   transition: transform 1600ms var(--cubic), -webkit-transform 1600ms var(--cubic);
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    height: 609px;
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    height: 581px;
+    width: 528px;
+  }
 }
 
 .modal-shut {
@@ -1310,7 +1319,7 @@ img {
   resize: none;
   display: block;
   padding: 12px 16px;
-  width: 448px;
+  width: 100%;
   height: 120px;
   margin: 0 auto;
   border: 1px solid var(--main-transparent);
@@ -1338,7 +1347,6 @@ img {
 
 .form-check__text {
   position: absolute;
-  left: 21.5px;
   width: 16px;
   height: 15px;
   border: 2px solid var(--black);
@@ -1367,8 +1375,6 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto 30px;
-  font-size: 14px;
-  line-height: 1.7142857143;
   letter-spacing: 0.03em;
   color: var(--contact);
 }
@@ -1410,9 +1416,177 @@ img {
 }
 
 .form-check__contract-terms {
-  font-size: 14px;
-  line-height: 1.7142857143;
   letter-spacing: 0.03em;
   text-decoration: underline;
   color: var(--button);
+}
+
+@media screen and (max-width: 1199px) {
+  .form-check, .form-check__contract-terms {
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
+  .form-check__text {
+    left: 9.5px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-check, .form-check__contract-terms {
+    font-size: 14px;
+    line-height: 1.1666666667;
+  }
+  .form-check__text {
+    left: 21.5px;
+  }
+}
+/*portfolio*/
+.portfolio {
+  padding: 94px 0;
+}
+
+.button-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.button-list__menu-button {
+  padding: 6px 22px;
+  margin: 0;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  border-color: transparent;
+  cursor: pointer;
+  -webkit-transition-property: background-color, color, -webkit-box-shadow;
+  transition-property: background-color, color, -webkit-box-shadow;
+  transition-property: background-color, color, box-shadow;
+  transition-property: background-color, color, box-shadow, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-list__menu-button:hover, .button-list__menu-button:focus {
+  background-color: #2196F3;
+  color: #ffffff;
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+
+.projects__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: calc((100% - 60px) / 3);
+      flex-basis: calc((100% - 60px) / 3);
+}
+
+.projects__link {
+  position: relative;
+  text-decoration: none;
+  -webkit-transition-property: -webkit-box-shadow;
+  transition-property: -webkit-box-shadow;
+  transition-property: box-shadow;
+  transition-property: box-shadow, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* cue */
+.picture {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9019607843);
+  -webkit-transform: translateY(102%);
+          transform: translateY(102%);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.projects__link:hover, .projects__link:focus {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.projects__link:hover .project-overlay {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.projects__link:focus .project-overlay {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.project-overlay__text {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  padding: 63px 24px;
+}
+
+/* cue */
+.projects__title {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.projects__attribute {
+  font-size: 16px;
+  line-height: 1.85;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.projects__description {
+  padding: 20px 24px;
+  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
 }/*# sourceMappingURL=main.css.map */

@@ -1,9 +1,5 @@
 
 .contacts {
-    
-    // 
-    // 
-
     margin-left: auto;
 
     @media screen and (min-width: 1200px) {
@@ -46,15 +42,15 @@
   }
   
   .contacts__link {
-     @include flexible(space-between);
-    // min-width: 140px;
+      @include flexible(space-around);
+    
   }
   
   .contacts__link--wide {
     
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       margin-bottom: 10px;
-      min-width: 138px;
+      min-width: 140px;
     }
     @media screen and (min-width: 1200px) {
       margin: 0;
