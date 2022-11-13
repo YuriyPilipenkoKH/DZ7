@@ -125,14 +125,19 @@ img {
   color: var(--black);
 }
 
+.menu-button__icon {
+  fill: yellow;
+}
+
 .menu-button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin: 0;
   padding: 0;
-  border: none;
-  background-color: transparent;
+  border: crimson;
+  background-color: grey;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .menu-button {
@@ -157,9 +162,6 @@ img {
   text-align: center;
   font-size: 20px;
 }
-.menu-container.is-open {
-  display: block;
-}
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
@@ -168,12 +170,21 @@ img {
     left: 0;
     width: 100%;
   }
+  .menu-container.is-open {
+    display: block;
+  }
 }
 @media screen and (min-width: 768px) {
   .menu-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
 }
 
