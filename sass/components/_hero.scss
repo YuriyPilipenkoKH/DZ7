@@ -14,14 +14,14 @@
 
     @media screen and (max-width: 479px) {
       background-image: linear-gradient(to right, var(--image-overlay), var(--image-overlay)),
-        url("../../images/header-img__mobile.jpg");
+        url("../images/header-img__mobile.jpg");
 
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
          .overlay {
            background-image: linear-gradient(to right,  var(--image-overlay), var(--image-overlay)),
-           url("../../images/header-img__mobile@2x.jpg");
+           url("../images/header-img__mobile@2x.jpg");
          }
  }
       
