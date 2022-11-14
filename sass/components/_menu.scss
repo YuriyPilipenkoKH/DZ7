@@ -53,7 +53,9 @@
      width: 100vw;
 
      &.is-open {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }    
 
     }
