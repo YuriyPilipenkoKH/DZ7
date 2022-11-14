@@ -1725,6 +1725,17 @@ img {
   list-style-type: none;
   text-decoration: none;
 }
+@media screen and (max-width: 767px) {
+  .button-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 8px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    max-width: 400px;
+  }
+}
 
 .button-list__menu-button {
   padding: 6px 22px;
