@@ -8,11 +8,11 @@
         fill: var(--button);
     }
 }
-// .menu-button__icon {
-//     &:not(:active) {
-//         fill: var(--black);
-//     }
-// }
+.menu-button__icon {
+    &:not(:active) {
+        fill: var(--black);
+    }
+}
 
 .menu-button {
     display: inline-flex;
@@ -50,7 +50,7 @@
     padding: 48px 40px;
      font-size: 20px;
      height: 100vh;
-     width: 100%;
+     width: 100vw;
 
      &.is-open {
         display: block;

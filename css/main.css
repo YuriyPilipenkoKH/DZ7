@@ -126,6 +126,10 @@ img {
   fill: var(--button);
 }
 
+.menu-button__icon:not(:active) {
+  fill: var(--black);
+}
+
 .menu-button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -165,7 +169,7 @@ img {
     padding: 48px 40px;
     font-size: 20px;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
   }
   .menu-container.is-open {
     display: block;
